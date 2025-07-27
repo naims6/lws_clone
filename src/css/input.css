@@ -1,0 +1,53 @@
+/* Goggle FOnt */
+@import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #0f172a;
+  --bg-secondary: #0b1120;
+  --text-white: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border-color: #94a3b8;
+  --border-secondary: #94a3b842;
+  --btn-color: #0284c7;
+}
+@layer utilities {
+  .container {
+    margin: 0 auto;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-white {
+    color: var(--text-white);
+  }
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  .bg-main {
+    background-color: var(--bg-color);
+  }
+  .bg-secondary {
+    background-color: var(--bg-secondary);
+  }
+  .border-t {
+    border-top: 1px solid var(--border-secondary);
+  }
+  .border-b {
+    border-bottom: 1px solid var(--border-secondary);
+  }
+  .font-siliguri {
+    font-family: "Hind Siliguri", sans-serif;
+  }
+  .btn {
+    background: var(--btn-color);
+    color: var(--text-white);
+    border-radius: 30px;
+    font-size: 0.9rem;
+  }
+}

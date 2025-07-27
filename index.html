@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LWS-Clone</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body class="font-siliguri">
+    <nav class="bg-main text-main border-color fixed top-0 z-10 w-full">
+      <div class="container">
+        <div
+          class="relative flex justify-between items-center py-3 px-4 lg:px-16"
+        >
+          <div class="w-[130px] flex-center">
+            <img
+              class="w-full cursor-pointer"
+              src="./src/assets/logo.svg"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="hidden md:flex justify-center items-center gap-6 text-secondary"
+          >
+            <div
+              class="text-white bg-gray-600/50 py-2 px-3 rounded-md transition-all duration-100"
+            >
+              <a href="#">হোম</a>
+            </div>
+            <div
+              class="flex gap-1.5 flex-center hover:bg-gray-600/50 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
+            >
+              <a href="#">রিয়াক্টিভ এক্সিলারেটর</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div
+              class="flex gap-1.5 flex-center hover:bg-gray-600/50 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
+            >
+              <a href="#">থিংক ইন এ রিডাক্স ওয়ে</a
+              ><i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="flex gap-6">
+              <button class="cursor-pointer text-lg text-yellow-200/70">
+                <i class="fa-solid fa-lightbulb menuicon"></i>
+              </button>
+              <button
+                class="cursor-pointer text-lg text-white btn py-2 px-4 text-center font-semibold"
+              >
+                লগইন
+              </button>
+            </div>
+          </div>
+
+          <div class="flex gap-6 md:hidden">
+            <button class="cursor-pointer text-lg text-yellow-200/60">
+              <i class="fa-solid fa-lightbulb menuicon"></i>
+            </button>
+            <button id="menubtn" class="cursor-pointer text-lg text-white">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden opacity-0 absolute bg-main space-y-2.5 top-full left-0 w-full text-secondary px-5 pt-5 pb-7 md:hidden transition-all duration-300"
+      >
+        <div
+          class="hover:bg-gray-700 py-2 px-2 rounded-sm hover:text-white cursor-pointer"
+        >
+          <a href="#">হোম</a>
+        </div>
+        <div
+          class="flex gap-1.5 items-center hover:bg-gray-700 py-2 px-2 rounded-sm hover:text-white cursor-pointer"
+        >
+          <a href="#">রিয়াক্টিভ এক্সিলারেটর</a
+          ><i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div
+          class="flex gap-1.5 items-center hover:bg-gray-700 py-2 px-2 rounded-sm hover:text-white cursor-pointer mt-4"
+        >
+          <a href="#">থিংক ইন এ রিডাক্স ওয়ে</a
+          ><i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="flex gap-6 pt-3 border-t">
+          <button
+            class="cursor-pointer w-full text-lg text-white btn text-center font-medium"
+          >
+            লগইন
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="min-h-screen">
+      <section id="hero" class="bg-secondary min-h-full">
+        <div class="container min-h-screen flex items-center justify-center">
+          <div
+            class="text-secondary grid grid-cols-1 lg:grid-cols-2 lg:gap-24 px-3 lg:px-16 mt-[50px]"
+          >
+            <div
+              class="py-4 px-3 border border-gray-800/80 rounded-xl mt-6 scale-95 hover:scale-100 transition duration-400"
+            >
+              <div>
+                <img
+                  class="aspect-vide w-ful"
+                  src="./src/assets/heroimage1.png"
+                  alt="hero image"
+                />
+              </div>
+              <div class="text-center mt-6 mb-8">
+                <p class="text-xl lg:text-xl leading-6">
+                  ডকুমেন্টেশন থেকে রিয়্যাক্ট ও নেক্সট জে.এস-এর মৌলিক ও আবশ্যিক
+                  বিষয়সমূহ বুঝার পাশাপাশি এই কোর্সের প্রজেক্ট ভিত্তিক শেখানোর
+                  পদ্ধতি আপনাকে একজন দক্ষ রিয়্যাক্ট ফ্রন্ট-এন্ড ডেভেলপার হয়ে
+                  উঠতে সাহায্য করবে বলে আমাদের বিশ্বাস।
+                </p>
+              </div>
+              <div
+                class="flex flex-col items-center justify-center lg:flex-row gap-4 w-full text-white font-medium"
+              >
+                <button class="hidden btn w-full py-3 px-5">
+                  <a href="#"
+                    ><i class="fa-regular fa-clock mr-1.5"></i> ১১০০ টাকা
+                    <span>|</span> এনরোল করুন
+                  </a>
+                </button>
+                <button
+                  class="border border-gray-800 py-3 px-6 rounded-4xl w-fit lg:w-fit"
+                >
+                  <a href="#"
+                    ><i class="fa-solid fa-video mr-1.5"></i>কোর্সের বিস্তারিত
+                  </a>
+                </button>
+              </div>
+              <div class="mt-3 lg:mt-5 text-center">
+                <span class="text-[14px] lg:text-lg"
+                  ><i class="fa-solid fa-circle-exclamation mr-2"></i>বর্তমানে
+                  এনরোলমেন্ট বন্ধ আছে। পরবর্তী ব্যাচে আবার শুরু হবে।</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="py-4 px-3 border border-gray-800/80 rounded-xl mt-6 scale-95 hover:scale-100 transition duration-400"
+            >
+              <div>
+                <img
+                  class="aspect-video w-full rounded-md"
+                  src="./src/assets/heroimage2.png"
+                  alt="hero image"
+                />
+              </div>
+              <div class="text-center mt-6 mb-8">
+                <p class="text-xl lg:text-xl leading-6">
+                  রিডাক্স এর মৌলিক এবং আবশ্যিক বিষয়সমূহ বুঝার পাশাপাশি এই
+                  কোর্সের প্রজেক্ট ভিত্তিক শেখানোর পদ্ধতি আপনাকে একজন দক্ষ
+                  রিডাক্স প্রোগ্রামার হয়ে উঠতে সাহায্য করবে বলে আমাদের বিশ্বাস।
+                </p>
+              </div>
+              <div
+                class="flex flex-col items-center justify-center lg:flex-row gap-4 w-full text-white font-medium px-2"
+              >
+                <button class="btn w-full py-3 px-5">
+                  <a href="#"
+                    ><i class="fa-regular fa-clock mr-1.5"></i> ১১০০ টাকা
+                    <span>|</span> এনরোল করুন
+                  </a>
+                </button>
+                <button
+                  class="border border-gray-800 py-3 px-5 rounded-4xl w-1/2 lg:w-7/10"
+                >
+                  <a href="#"
+                    ><i class="fa-solid fa-video mr-1.5"></i>কোর্সের বিস্তারিত
+                  </a>
+                </button>
+              </div>
+              <div class="mt-3 lg:mt-5 text-center">
+                <span class="text-[14px] lg:text-lg"
+                  ><i class="fa-solid fa-circle-exclamation mr-2"></i>বাংলাদেশের
+                  বাইরের মোবাইল নাম্বার দিয়ে এনরোলমেন্ট করলে কোর্স ফি হবে 1,200
+                  টাকা।</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
