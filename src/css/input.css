@@ -10,6 +10,7 @@
   --bg-secondary: #0b1120;
   --text-white: #f8fafc;
   --text-secondary: #94a3b8;
+  --text-span: #38bdf8;
   --border-color: #94a3b8;
   --border-secondary: #94a3b842;
   --btn-color: #0284c7;
@@ -25,6 +26,9 @@
   }
   .text-white {
     color: var(--text-white);
+  }
+  .text-span {
+    color: var(--text-span);
   }
   .text-secondary {
     color: var(--text-secondary);
@@ -49,5 +53,12 @@
     color: var(--text-white);
     border-radius: 30px;
     font-size: 0.9rem;
+  }
+  .btn2 {
+    border: 1px solid var(--btn-color);
+    border-radius: 2rem;
+    color: var(--btn-color);
+    padding: 8px 20px;
+    background: transparent;
   }
 }
