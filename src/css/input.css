@@ -60,5 +60,9 @@
     color: var(--btn-color);
     padding: 8px 20px;
     background: transparent;
+    transition: 0.3s;
+  }
+  .btn2:hover {
+    background: #0285c759;
   }
 }
