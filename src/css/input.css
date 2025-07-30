@@ -69,4 +69,9 @@
   .btn2:hover {
     background: #0285c759;
   }
+  .community-video:hover {
+    box-shadow: 0px 0px 40px -4px #61d0d7;
+    -webkit-box-shadow: 0px 0px 40px -4px #61d0d7;
+    -moz-box-shadow: 0px 0px 40px -4px #61d0d7;
+  }
 }
