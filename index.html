@@ -14,7 +14,7 @@
   </head>
   <body class="font-siliguri">
     <nav
-      class="bg-main text-main border-color fixed top-0 z-10 w-full border-b border-gray-600"
+      class="bg-main text-main border-color fixed top-0 z-10 w-full border-b border-gray-600 overflow-hidden"
     >
       <div class="container">
         <div
@@ -102,13 +102,27 @@
     </nav>
 
     <main class="min-h-screen">
-      <section id="hero" class="bg-secondary min-h-full border-b py-7">
+      <section
+        id="hero"
+        class="relative bg-secondary min-h-full border-b py-7 overflow-hidden"
+      >
+        <!-- bg -->
+        <div
+          class="absolute right-[28%] top-0 hidden h-[150px] w-[200px] rotate-12 rounded-3xl bg-gradient-to-l from-blue-600 to-sky-400 opacity-20 blur-3xl filter dark:block dark:opacity-30 lg:top-44 lg:-right-20 lg:h-72 lg:w-[350px] xl:h-80 xl:w-[500px]"
+        ></div>
+        <div
+          class="absolute bottom-44 -left-64 hidden h-[150px] w-[900px] -rotate-45 rounded-3xl bg-gradient-to-r from-violet-600 to-indigo-800 opacity-30 blur-3xl filter dark:block lg:bottom-24 lg:-left-20 lg:h-28 lg:w-[250px] lg:-rotate-12 lg:opacity-20 xl:h-40 xl:w-[400px]"
+        ></div>
+        <div
+          class="absolute left-[28%] top-28 hidden rotate-12 rounded-3xl bg-sky-800 opacity-90 blur-3xl filter dark:opacity-30 lg:h-32 lg:w-[450px] dark:lg:block xl:h-44 xl:w-[600px]"
+        ></div>
+        <!-- content part -->
         <div class="container min-h-screen flex items-center justify-center">
           <div
             class="text-secondary grid grid-cols-1 lg:grid-cols-2 lg:gap-24 px-3 lg:px-16 mt-[30px]"
           >
             <div
-              class="py-4 px-3 border border-gray-800/80 rounded-xl scale-95 hover:scale-100 transition duration-400"
+              class="bg-secondary py-4 px-3 border border-gray-800/80 rounded-xl scale-95 hover:scale-100 transition duration-400"
             >
               <div>
                 <img
@@ -151,7 +165,7 @@
             </div>
 
             <div
-              class="py-4 px-3 border border-gray-800/80 rounded-xl scale-95 hover:scale-100 transition duration-400"
+              class="bg-secondary py-4 px-3 border border-gray-800/80 rounded-xl scale-95 hover:scale-100 transition duration-400"
             >
               <div>
                 <img
