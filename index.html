@@ -13,66 +13,149 @@
     />
   </head>
   <body class="font-siliguri">
-    <nav
-      class="bg-main text-main border-color fixed top-0 z-10 w-full border-b border-gray-600"
-    >
-      <div class="container">
-        <div
-          class="relative flex justify-between items-center py-3 px-4 lg:px-16"
-        >
-          <div class="w-[130px] flex-center">
-            <img
-              class="w-full cursor-pointer"
-              src="./src/assets/logo.svg"
-              alt=""
-            />
-          </div>
-
+    <nav class="fixed top-0 z-10 w-full">
+      <div
+        class="nav-bg text-main border-color border-b border-gray-600 backdrop-blur-2xl"
+      >
+        <div class="container">
           <div
-            class="hidden md:flex justify-center items-center gap-4 text-secondary"
+            class="relative flex justify-between items-center py-3 px-4 lg:px-16"
           >
-            <div
-              class="text-white bg-gray-600/50 py-2 px-3 rounded-md transition-all duration-100"
-            >
-              <a href="#">হোম</a>
+            <div class="w-[130px] flex-center">
+              <img
+                class="w-full cursor-pointer"
+                src="./src/assets/logo.svg"
+                alt=""
+              />
             </div>
+
             <div
-              class="flex gap-1.5 flex-center hover:bg-gray-600/50 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
+              class="hidden md:flex justify-center items-center gap-4 text-secondary"
             >
-              <a href="#">রিয়াক্টিভ এক্সিলারেটর</a
-              ><i class="fa-solid fa-chevron-down"></i>
+              <div
+                class="text-white bg-gray-600/60 py-2 px-3 rounded-md transition-all duration-100"
+              >
+                <a href="#">হোম</a>
+              </div>
+              <div class="relative">
+                <div
+                  class="flex gap-1.5 flex-center hover:bg-gray-600/60 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
+                >
+                  <a href="#">রিয়াক্টিভ এক্সিলারেটর</a
+                  ><i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div
+                  class="absolute top-[115%] -left-20 w-[450px] h-fit bg-secondary rounded-sm py-5 px-7 border border-gray-600/60"
+                >
+                  <h1 class="text-sm">কোর্সের বিস্তারিত</h1>
+                  <div class="grid grid-cols-2 gap-8 p-1.5 pt-4">
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-file-alt text-purple-700 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px] font-semibold">কোর্স হোম পেইজ</p>
+                    </div>
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-folder-open text-yellow-300 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">মডিউলস</p>
+                    </div>
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-desktop text-red-400/70 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">প্রজেক্টস</p>
+                    </div>
+
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-person-running text-purple-300 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">কিভাবে চলবে</p>
+                    </div>
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-fire text-yellow-300/70 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">কেন করবেন</p>
+                    </div>
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-user-gear text-green-400/70 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">সাপোর্ট</p>
+                    </div>
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-people-group text-blue-500/70 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">কি জানতে হবে</p>
+                    </div>
+                    <div
+                      class="text-center flex gap-2.5 items-center text-sm cursor-pointer hover:text-white transform hover:scale-[103%] transition-all duration-100"
+                    >
+                      <i
+                        class="fa-solid fa-circle-question text-cyan-500 text-[1rem] size-4 mr-2.5"
+                      ></i>
+                      <p class="text-[12px]">সাধারণ প্রশ্নের উত্তর</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-1.5 flex-center hover:bg-gray-600/60 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
+              >
+                <a href="#">থিংক ইন এ রিডাক্স ওয়ে</a
+                ><i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="flex gap-6">
+                <button class="cursor-pointer text-lg text-yellow-200/90">
+                  <i class="fa-solid fa-lightbulb menuicon"></i>
+                </button>
+                <button
+                  class="cursor-pointer text-lg text-white btn py-2 px-4 text-center font-semibold"
+                >
+                  লগইন
+                </button>
+              </div>
             </div>
-            <div
-              class="flex gap-1.5 flex-center hover:bg-gray-600/50 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
-            >
-              <a href="#">থিংক ইন এ রিডাক্স ওয়ে</a
-              ><i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="flex gap-6">
-              <button class="cursor-pointer text-lg text-yellow-200/90">
-                <i class="fa-solid fa-lightbulb menuicon"></i>
+
+            <div class="flex md:hidden">
+              <button class="cursor-pointer text-yellow-200/95 size-9">
+                <i class="fa-solid fa-lightbulb darkbtn"></i>
               </button>
               <button
-                class="cursor-pointer text-lg text-white btn py-2 px-4 text-center font-semibold"
+                id="menubtn"
+                class="cursor-pointer text-lg text-white size-9"
               >
-                লগইন
+                <i
+                  class="fa-solid fa-bars menu-btn-icon transition-all duration-300"
+                ></i>
               </button>
             </div>
-          </div>
-
-          <div class="flex gap-6 md:hidden">
-            <button class="cursor-pointer text-lg text-yellow-200/95">
-              <i class="fa-solid fa-lightbulb menuicon"></i>
-            </button>
-            <button id="menubtn" class="cursor-pointer text-lg text-white">
-              <i class="fa-solid fa-bars"></i>
-            </button>
           </div>
         </div>
       </div>
       <div
         id="mobile-menu"
-        class="hidden opacity-0 absolute bg-main top-full left-0 w-full text-secondary px-5 pt-5 pb-7 md:hidden transition-all duration-300"
+        class="hidden opacity-0 absolute nav-bg backdrop-blur-2xl top-full left-0 w-full text-secondary px-5 pt-5 pb-7 md:hidden transition-all duration-300"
       >
         <div
           class="hover:bg-gray-700 py-2 px-2 rounded-sm hover:text-white cursor-pointer"
@@ -102,7 +185,7 @@
     <main class="min-h-screen">
       <section
         id="hero"
-        class="relative bg-secondary min-h-full border-b py-7 overflow-hidden"
+        class="relative bg-secondary max-h-full border-b py-7 overflow-hidden"
       >
         <!-- bg -->
         <div
@@ -117,7 +200,7 @@
         <!-- content part -->
         <div class="container min-h-screen flex items-center justify-center">
           <div
-            class="text-secondary grid grid-cols-1 lg:grid-cols-2 lg:gap-24 px-3 lg:px-16 mt-[50px]"
+            class="text-secondary grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] xl:grid-cols-2 lg:gap-20 px-3 lg:px-16 mt-[50px] lg:mt-[30px]"
           >
             <div
               class="bg-secondary py-4 px-3 border border-gray-800/80 rounded-xl scale-95 hover:scale-100 transition duration-400"
@@ -182,9 +265,9 @@
               <div
                 class="flex flex-col items-center justify-center lg:flex-row gap-4 w-full text-white font-medium px-2"
               >
-                <button class="btn w-full py-3 px-5">
+                <button class="btn w-full py-3 px-5 text-sm">
                   <a href="#"
-                    ><i class="fa-regular fa-clock mr-1.5"></i> ১১০০ টাকা
+                    ><i class="fa-regular fa-clock mr-1.5"></i>১১০০ টাকা
                     <span>|</span> এনরোল করুন
                   </a>
                 </button>
@@ -379,13 +462,13 @@
             class="px-3 md:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-3 gap-6"
           >
             <div
-              class="lg:col-span-3 grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] bg-main border border-gray-500/50 px-5 py-7 lg:px-7 lg:py-10 rounded-lg gap-10 hover:scale-104 transition-all duration-300"
+              class="lg:col-span-3 grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] bg-main border border-gray-500/50 px-5 py-7 lg:px-7 lg:py-10 rounded-lg gap-10 hover:scale-104 transition-all duration-300 overflow-hidden"
             >
               <div
                 class="flex flex-col items-center justify-center lg:items-start text-center lg:text-left"
               >
                 <img class="w-[350px]" src="./src/assets/devconf.svg" alt="" />
-                <p class="text-secondary lg:text-2xl mt-8 mb-7">
+                <p class="text-secondary lg:text-[20px] mt-8 mb-7">
                   লার্ন উইথ সুমিত ২০২৩ সালের 21মে - 27মে আয়োজন করেছিলো
                   সর্বজনস্বীকৃত এবং প্রশংসিত ডেভেলোপার কনফারেন্স devConf 1.0.
                   সেখানে চারশ জন শিক্ষার্থী সহ উপস্থিত ছিলেন কমিউনিটির প্রায়
@@ -401,8 +484,8 @@
               <div class="pb-[56%] relative">
                 <iframe
                   class="community-video aspect-video border-2 border-[#61D0D7] rounded-md absolute top-0 left-0 w-full h-full transition-all duration-300"
-                  width="560"
-                  height="315"
+                  width="640px"
+                  height="360px"
                   src="https://www.youtube.com/embed/ER_y4tIbTNM?si=44D5yQxmj1WsAq1m"
                   title="YouTube video player"
                   frameborder="0"
@@ -525,7 +608,7 @@
 
       <section
         id="review"
-        class="bg-main border-b border border-gray-600/50 py-10 lg:pt-16 lg:pb-10 relative"
+        class="bg-main border-b border border-gray-600/50 py-10 lg:pt-16 lg:pb-8 relative"
       >
         <div class="container">
           <div class="text-center px-5">
@@ -983,7 +1066,7 @@
               </div>
             </div>
             <div
-              class="review-overlay absolute bottom-0 left-0 w-full h-[180px] lg:h-[230px] flex items-center justify-center bg-gradient-to-t from-gray-950 via-gray-900 to-transparent text-center"
+              class="review-overlay absolute bottom-0 left-0 w-full h-[180px] lg:h-[230px] flex items-center justify-center bg-gradient-to-t from-slate-900 via-gray-900 text-center"
             >
               <button
                 class="btn py-3 px-6 cursor-pointer font-medium more-comment"
