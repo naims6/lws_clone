@@ -15,6 +15,7 @@
   --border-secondary: #94a3b842;
   --btn-color: #0284c7;
   --review-color: #75767720;
+  --nav-bg: #0f172ad8;
 }
 @layer utilities {
   .container {
@@ -42,6 +43,9 @@
   }
   .bg-review {
     background: var(--review-color);
+  }
+  .nav-bg {
+    background: var(--nav-bg);
   }
   .border-t {
     border-top: 1px solid var(--border-secondary);
