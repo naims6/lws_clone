@@ -34,7 +34,6 @@ const body = document.querySelector("body");
 observer1.observe(body);
 
 hiddenElements.forEach((el) => {
-  console.log(el);
   observer2.observe(el);
 });
 
@@ -102,11 +101,12 @@ mobileMenuCourseBtn.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {
     e.stopPropagation();
     let thisMenu = mobileCourseDetails[index];
-
+    // reset all navbar first
     mobileCourseDetails.forEach((deatail) => {
-      if (deatail.classList.contains("h-fit")) {
-        deatail.classList.remove("h-fit", "p-3", "opacity-0");
-        deatail.classList.add("h-0", "p-0");
+      console.log(deatail, thisMenu);
+      if (deatail !== thisMenu) {
+        deatail.classList.remove("h-fit", "p-3");
+        deatail.classList.add("h-0", "p-0", "opacity-0");
       }
     });
 
