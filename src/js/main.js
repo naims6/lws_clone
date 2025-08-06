@@ -1,4 +1,44 @@
-// For Menu Opening And Closing
+// * Html load and web scroll effect
+
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("opacity-0");
+    }
+  });
+});
+
+const observer2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains("translate-y-24")) {
+          entry.target.classList.remove("translate-y-24", "opacity-0");
+        }
+
+        if (entry.target.classList.contains("-rotate-0")) {
+          entry.target.classList.remove("-rotate-0");
+          entry.target.classList.add("-rotate-6");
+        }
+      }
+    });
+  },
+  {
+    threshold: 0.7,
+  }
+);
+
+const hiddenElements = document.querySelectorAll(".effect");
+const body = document.querySelector("body");
+
+observer1.observe(body);
+
+hiddenElements.forEach((el) => {
+  console.log(el);
+  observer2.observe(el);
+});
+
+// * For Menu Opening And Closing
 const menuBtn = document.getElementById("menubtn");
 const menuBtnIcon = document.querySelector(".menu-btn-icon");
 const menuIcon = document.getElementById("darkbtn");
@@ -20,7 +60,8 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-// For Showing Courses Details on Navbar
+// * For Showing Courses Details on Navbar
+
 let courseDetails = document.querySelectorAll(".course-details");
 let menuCourseBtn = document.querySelectorAll(".menu-course-btn");
 
@@ -53,7 +94,7 @@ document.addEventListener("click", (e) => {
     hideAllMenu();
   }
 });
-// ON Small Devices
+//  ON Small Devices
 let mobileCourseDetails = document.querySelectorAll(".mobile-course-deatails");
 let mobileMenuCourseBtn = document.querySelectorAll(".mobile-menu-course-btn");
 
@@ -79,7 +120,7 @@ mobileMenuCourseBtn.forEach((btn, index) => {
   });
 });
 
-// For Showing All Review in Review Section
+// * For Showing All Review in Review Section
 const moreComment = document.querySelector(".more-comment");
 const reviewBox = document.querySelector(".review-box");
 const reviewOverlay = document.querySelector(".review-overlay");

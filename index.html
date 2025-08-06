@@ -18,7 +18,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body class="font-siliguri">
+  <body
+    class="font-siliguri opacity-0 transition-all duration-1000 ease-in-out"
+  >
     <nav class="fixed top-0 z-10 w-full">
       <div
         class="nav-bg text-main border-color border-b border-gray-600 backdrop-blur-2xl"
@@ -36,23 +38,23 @@
             </div>
 
             <div
-              class="hidden md:flex justify-center items-center gap-4 text-secondary"
+              class="hidden md:flex justify-center items-center gap-2 text-secondary"
             >
               <div
                 class="text-white bg-gray-600/60 py-2 px-3 rounded-md transition-all duration-100"
               >
-                <a href="#">হোম</a>
+                <a href="#" class="text-sm">হোম</a>
               </div>
               <div class="relative">
                 <div
                   class="menu-course-btn flex gap-1.5 flex-center hover:bg-gray-600/60 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
                 >
-                  <a href="#">রিয়াক্টিভ এক্সিলারেটর</a
-                  ><i class="fa-solid fa-chevron-down"></i>
+                  <a href="#" class="text-sm">রিয়াক্টিভ এক্সিলারেটর</a
+                  ><i class="fa-solid fa-chevron-down text-[12px]"></i>
                 </div>
 
                 <div
-                  class="course-details absolute top-[115%] -left-44 w-[450px] xl:w-[550px] h-fit bg-secondary rounded-sm py-5 px-7 border border-gray-600/60 scale-0 transition-all duration-100"
+                  class="course-details absolute top-[115%] -left-44 w-[400px] xl:w-[480px] h-fit bg-secondary rounded-sm py-5 px-7 border border-gray-600/60 scale-0 transition-all duration-100"
                 >
                   <h1 class="text-sm">কোর্সের বিস্তারিত</h1>
                   <div class="grid grid-cols-2 gap-8 p-1.5 pt-4">
@@ -145,12 +147,12 @@
                 <div
                   class="menu-course-btn flex gap-1.5 flex-center hover:bg-gray-600/60 hover:text-white py-2 px-3 rounded-md transition-all duration-100"
                 >
-                  <a href="#">থিংক ইন এ রিডাক্স ওয়ে</a
-                  ><i class="fa-solid fa-chevron-down"></i>
+                  <a href="#" class="text-sm">থিংক ইন এ রিডাক্স ওয়ে</a
+                  ><i class="fa-solid fa-chevron-down text-[12px]"></i>
                 </div>
 
                 <div
-                  class="course-details absolute top-[115%] -left-44 w-[450px] xl:w-[550px] h-fit bg-secondary rounded-sm py-5 px-7 border border-gray-600/60 scale-0 transition-all duration-100"
+                  class="course-details absolute top-[115%] -left-44 w-[400px] xl:w-[480px] h-fit bg-secondary rounded-sm py-5 px-7 border border-gray-600/60 scale-0 transition-all duration-100"
                 >
                   <h1 class="text-sm">কোর্সের বিস্তারিত</h1>
                   <div class="grid grid-cols-2 gap-8 p-1.5 pt-4">
@@ -255,7 +257,7 @@
                   </svg>
                 </button>
                 <button
-                  class="cursor-pointer text-lg text-white btn py-2 px-4 text-center font-semibold"
+                  class="cursor-pointer text-lg text-white btn py-1 px-4 text-center font-medium"
                 >
                   লগইন
                 </button>
@@ -482,6 +484,7 @@
       <section
         id="hero"
         class="relative bg-secondary max-h-full border-b py-7 overflow-hidden"
+        style="background-image: url(./src/assets/bg-pattern.svg)"
       >
         <!-- bg -->
         <div
@@ -741,7 +744,7 @@
           <div class="text-center">
             <div class="flex flex-col items-center justify-center">
               <img
-                class="w-22 lg:w-28"
+                class="w-20 lg:w-24 transform translate-y-24 opacity-0 effect delay-50 transition-all duration-200"
                 src="./src/assets/commuinity.svg"
                 alt=""
               />
@@ -861,10 +864,10 @@
           <div class="flex flex-col lg:flex-row px-6 lg:px-16">
             <div class="flex-1 flex items-center justify-center">
               <div
-                class="w-[230px] h-[280px] lg:w-[300px] lg:h-[350px] bg-[#8E6AC8] border-8 border-white rounded-[10px]"
+                class="w-[220px] h-[270px] lg:w-[270px] lg:h-[340px] bg-[#8E6AC8] scale-105 border-8 border-white rounded-[10px]"
               >
                 <img
-                  class="rounded-[10px] h-full w-full transform -translate-y-3 -translate-x-8 scale-105 -rotate-6 border-4 border-white"
+                  class="rounded-[10px] h-full w-full transform -translate-y-3 -translate-x-6 scale-105 border-4 border-white -rotate-0 effect delay-300 transition-all duration-200"
                   src="./src/assets/author.png"
                   alt=""
                 />
@@ -909,7 +912,13 @@
         <div class="container">
           <div class="text-center px-5">
             <div class="flex flex-col items-center justify-center">
-              <img class="w-22 lg:w-28" src="./src/assets/review.svg" alt="" />
+              <div class="w-20 lg:w-28">
+                <img
+                  class="w-20 lg:w-28 transform translate-y-24 opacity-0 effect transition-all duration-200 delay-50 ease-in"
+                  src="./src/assets/review.svg"
+                  alt=""
+                />
+              </div>
               <h1 class="text-2xl lg:text-4xl text-white font-bold mb-1.5 mt-2">
                 <span class="text-span">লার্নাররা</span> আমাদের সম্পর্কে যা
                 ভাবেন
